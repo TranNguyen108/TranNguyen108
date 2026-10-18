@@ -177,18 +177,17 @@ header{
 .footer ul li a:hover{background:#d4f822;color:#0a0a0a}
 
 /* ============ SCROLL ANIMATIONS (CSS scroll-driven) ============ */
-.auto-blur{animation:autoBlur linear both;animation-timeline:view()}
+.auto-blur{animation:autoBlur linear both;animation-timeline:view();animation-range:entry 0% entry 100%}
 @keyframes autoBlur{
-  0%{filter:blur(40px);transform:translateY(60px);opacity:0}
-  35%,65%{filter:blur(0);transform:translateY(0);opacity:1}
-  100%{filter:blur(40px);transform:translateY(-60px);opacity:0}
+  from{filter:blur(40px);transform:translateY(60px);opacity:0}
+  to{filter:blur(0);transform:translateY(0);opacity:1}
 }
-.auto-take-full{animation:autoTakeFull linear both;animation-timeline:view(65% 70%)}
+.auto-take-full{animation:autoTakeFull linear both;animation-timeline:view();animation-range:cover 15% cover 95%}
 @keyframes autoTakeFull{
   from{width:360px;height:510px;border-radius:50px}
   to{width:100%;height:100vh;border-radius:0;margin-bottom:100px}
 }
-.auto-display{animation:autoDisplay linear both;animation-timeline:view()}
+.auto-display{animation:autoDisplay linear both;animation-timeline:view();animation-range:entry 0% entry 85%}
 @keyframes autoDisplay{
   from{opacity:0;transform:translateY(200px) scale(.3)}
   to{opacity:1;transform:translateY(0) scale(1)}
