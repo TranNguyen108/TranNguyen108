@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N.C — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of N.C — Full-Stack Developer building web & mobile products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="glow glow-1" aria-hidden="true"></div>
+<div class="glow glow-2" aria-hidden="true"></div>
+
+<nav id="nav">
+  <a href="#hero" class="logo">&lt;N.C <span>/</span>&gt;</a>
+  <div class="nav-links">
+    <a href="#about" data-en="About" data-vi="Giới thiệu">About</a>
+    <a href="#stack" data-en="Stack" data-vi="Kỹ năng">Stack</a>
+    <a href="#projects" data-en="Projects" data-vi="Dự án">Projects</a>
+    <a href="#journey" data-en="Journey" data-vi="Hành trình">Journey</a>
+    <a href="#contact" class="nav-cta" data-en="Contact" data-vi="Liên hệ">Contact</a>
+    <button id="lang-toggle" aria-label="Switch language">VI</button>
+  </div>
+  <button id="menu-btn" aria-label="Menu">☰</button>
+</nav>
+
+<header id="hero">
+  <div class="hero-inner">
+    <div class="hero-badge reveal"><span class="dot"></span><span data-en="Open to opportunities" data-vi="Đang tìm kiếm cơ hội mới">Open to opportunities</span></div>
+    <p class="hero-hello reveal" data-en="Hi there, I'm" data-vi="Xin chào, mình là">Hi there, I'm</p>
+    <h1 class="hero-name reveal">N.C</h1>
+    <h2 class="hero-role reveal"><span id="typed"></span><span class="caret">▍</span></h2>
+    <p class="hero-sub reveal" data-en="I turn ideas into working products — from e-commerce platforms and AI-powered tools to polished mobile apps." data-vi="Mình biến ý tưởng thành sản phẩm thật — từ nền tảng thương mại điện tử, công cụ AI đến ứng dụng di động chỉn chu.">I turn ideas into working products — from e-commerce platforms and AI-powered tools to polished mobile apps.</p>
+    <div class="hero-ctas reveal">
+      <a href="#projects" class="btn btn-primary" data-en="View my work" data-vi="Xem sản phẩm">View my work</a>
+      <a href="https://github.com/TranNguyen108" target="_blank" rel="noopener" class="btn btn-ghost">
+        <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</header>
+
+<main>
+<section id="about" class="section">
+  <div class="container">
+    <p class="section-kicker reveal">01 · <span data-en="About" data-vi="Giới thiệu">About</span></p>
+    <h2 class="section-title reveal" data-en="Code is my craft." data-vi="Code là nghề của mình.">Code is my craft.</h2>
+    <div class="about-grid">
+      <p class="about-text reveal" data-en="I'm a full-stack developer who loves the whole journey — from a rough idea to a product people actually use. My work spans PHP e-commerce systems, Next.js web apps, Flutter mobile apps and Python automation tools. I care about clean code, thoughtful UX and shipping things that work." data-vi="Mình là lập trình viên full-stack, yêu thích toàn bộ hành trình từ ý tưởng thô đến sản phẩm người dùng thật sự dùng. Mình đã làm hệ thống thương mại điện tử PHP, web app Next.js, ứng dụng di động Flutter và công cụ tự động hoá Python. Mình đề cao code sạch, UX tinh tế và sản phẩm chạy ổn định.">I'm a full-stack developer who loves the whole journey — from a rough idea to a product people actually use. My work spans PHP e-commerce systems, Next.js web apps, Flutter mobile apps and Python automation tools. I care about clean code, thoughtful UX and shipping things that work.</p>
+      <div class="stats">
+        <div class="stat reveal"><span class="stat-num" data-count="11">0</span><span class="stat-plus">+</span><p data-en="Public repositories" data-vi="Repo công khai">Public repositories</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="7">0</span><span class="stat-plus">+</span><p data-en="Languages used" data-vi="Ngôn ngữ đã dùng">Languages used</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="4">0</span><span class="stat-plus">+</span><p data-en="Years of coding" data-vi="Năm kinh nghiệm code">Years of coding</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stack" class="section">
+  <div class="container">
+    <p class="section-kicker reveal">02 · <span data-en="Tech stack" data-vi="Kỹ năng">Tech stack</span></p>
+    <h2 class="section-title reveal" data-en="Tools I build with." data-vi="Công cụ mình dùng.">Tools I build with.</h2>
+    <div class="stack-grid">
+      <div class="stack-card reveal">
+        <h3 data-en="Languages" data-vi="Ngôn ngữ">Languages</h3>
+        <div class="pills"><span>TypeScript</span><span>JavaScript</span><span>Python</span><span>PHP</span><span>Dart</span><span>SQL</span><span>HTML/CSS</span></div>
+      </div>
+      <div class="stack-card reveal">
+        <h3>Frontend & Mobile</h3>
+        <div class="pills"><span>Next.js</span><span>React</span><span>Flutter</span><span>Tailwind CSS</span></div>
+      </div>
+      <div class="stack-card reveal">
+        <h3>Backend</h3>
+        <div class="pills"><span>Node.js</span><span>Express</span><span>MySQL</span><span>REST APIs</span></div>
+      </div>
+      <div class="stack-card reveal">
+        <h3 data-en="Tools" data-vi="Công cụ">Tools</h3>
+        <div class="pills"><span>Git & GitHub</span><span>VS Code</span><span>Playwright</span><span>Docker</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <p class="section-kicker reveal">03 · <span data-en="Projects" data-vi="Dự án">Projects</span></p>
+    <h2 class="section-title reveal" data-en="Things I've built." data-vi="Những thứ mình đã làm.">Things I've built.</h2>
+    <p class="section-sub reveal" data-en="Live from my GitHub — always up to date." data-vi="Đồng bộ trực tiếp từ GitHub của mình — luôn mới nhất.">Live from my GitHub — always up to date.</p>
+    <div id="project-grid" class="project-grid"></div>
+    <div id="project-fallback" class="project-grid" hidden></div>
+  </div>
+</section>
+
+<section id="journey" class="section">
+  <div class="container">
+    <p class="section-kicker reveal">04 · <span data-en="Journey" data-vi="Hành trình">Journey</span></p>
+    <h2 class="section-title reveal" data-en="How I got here." data-vi="Mình đã đi như thế nào.">How I got here.</h2>
+    <div class="timeline">
+      <div class="tl-item reveal"><span class="tl-year">2022</span><div class="tl-body"><h3 data-en="First lines of code" data-vi="Những dòng code đầu tiên">First lines of code</h3><p data-en="Started the coding journey — HTML, CSS and curiosity." data-vi="Bắt đầu hành trình lập trình — HTML, CSS và sự tò mò.">Started the coding journey — HTML, CSS and curiosity.</p></div></div>
+      <div class="tl-item reveal"><span class="tl-year">2024</span><div class="tl-body"><h3 data-en="Web projects & coursework" data-vi="Dự án web & đồ án">Web projects & coursework</h3><p data-en="Shipped florist websites and .NET coursework projects." data-vi="Hoàn thành website bán hoa và các đồ án .NET.">Shipped florist websites and .NET coursework projects.</p></div></div>
+      <div class="tl-item reveal"><span class="tl-year">2025</span><div class="tl-body"><h3 data-en="Going full-stack" data-vi="Chuyển sang full-stack">Going full-stack</h3><p data-en="Flower-shop e-commerce in PHP/MySQL, nhacohoa in Next.js, an AI chat bot in Python." data-vi="Web bán hoa bằng PHP/MySQL, nhacohoa bằng Next.js, chatbot AI bằng Python.">Flower-shop e-commerce in PHP/MySQL, nhacohoa in Next.js, an AI chat bot in Python.</p></div></div>
+      <div class="tl-item reveal"><span class="tl-year">2026</span><div class="tl-body"><h3 data-en="Mobile & automation" data-vi="Di động & tự động hoá">Mobile & automation</h3><p data-en="Neutral Calendar in Flutter, Python automation tooling, and deeper CS coursework." data-vi="Neutral Calendar bằng Flutter, công cụ tự động hoá Python và các môn chuyên ngành sâu hơn.">Neutral Calendar in Flutter, Python automation tooling, and deeper CS coursework.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <p class="section-kicker reveal">05 · <span data-en="Contact" data-vi="Liên hệ">Contact</span></p>
+    <h2 class="section-title reveal" data-en="Let's build something." data-vi="Cùng làm điều gì đó nhé.">Let's build something.</h2>
+    <p class="section-sub reveal" data-en="Have a project in mind, a role to fill, or just want to talk code? My inbox is open." data-vi="Có dự án muốn làm, vị trí cần tuyển, hay chỉ muốn trò chuyện về code? Cứ liên hệ với mình.">Have a project in mind, a role to fill, or just want to talk code? My inbox is open.</p>
+    <div class="contact-ctas reveal">
+      <a href="https://github.com/TranNguyen108" target="_blank" rel="noopener" class="btn btn-primary">GitHub — @TranNguyen108</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 N.C · <span data-en="Built with care, caffeine and vanilla JS." data-vi="Làm bằng tâm huyết, cà phê và JS thuần.">Built with care, caffeine and vanilla JS.</span></p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
