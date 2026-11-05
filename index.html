@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>N.C — Developer Portfolio</title>
-<meta name="description" content="N.C — Full-stack developer portfolio. Turning ideas into working products.">
+<title>Trần Đỗ Huy Nguyên — Web Developer</title>
+<meta name="description" content="Trần Đỗ Huy Nguyên — web developer. Building websites and web systems for real clients.">
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
@@ -23,6 +23,7 @@
     <p><a href="#about">ABOUT</a></p>
     <p><a href="#journey">JOURNEY</a></p>
     <p><a href="#contact">CONTACT</a></p>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle light/dark mode"><i class="bx bx-moon"></i></button>
   </div>
 </header>
 
@@ -34,7 +35,7 @@
   </div>
   <div class="hero-info auto-blur">
     <h1>DEVELOPER</h1>
-    <p>N.C — full-stack developer crafting web &amp; mobile experiences that people love to use.</p>
+    <p>Trần Đỗ Huy Nguyên — web developer crafting websites and web systems that people love to use.</p>
     <button onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">VIEW WORK</button>
   </div>
   <h1 class="gaming-text">PORTFOLIO</h1>
@@ -48,10 +49,10 @@
     <h1 class="grad-text">TURNING IDEAS INTO REAL PRODUCTS</h1>
   </div>
   <div class="image-box auto-take-full">
-    <img src="img/avatar.jpg" alt="N.C">
+    <img src="img/corridor.jpg" alt="Trần Đỗ Huy Nguyên">
   </div>
-  <h4>N.C — FULL-STACK DEVELOPER</h4>
-  <h5>I build across the stack — PHP e-commerce systems, Next.js web apps, Flutter mobile apps and Python automation tools. Clean code, thoughtful UX, shipped products.</h5>
+  <h4>TRẦN ĐỖ HUY NGUYÊN — WEB DEVELOPER</h4>
+  <h5>I build websites and web systems for real clients — a berthing aid system for ports, a wholesale marketplace, and an e-commerce platform — alongside business sites and landing pages in Next.js, PHP and TypeScript. Clean code, thoughtful UX, shipped products.</h5>
 </section>
 
 <!-- ============ STACK STRIP ============ -->
@@ -67,37 +68,37 @@
 <!-- ============ INFO / WORK ============ -->
 <section id="work" class="info-section">
   <h3>SELECTED WORK</h3>
-  <p>A few things I've built — every project is real, shipped code. Click through to see the source.</p>
+  <p>Real projects for real clients, plus a few personal builds. Client systems are private; public ones link to their source.</p>
   <div class="info-cards">
     <div class="card auto-display">
       <video src="videos/hero1.mp4" autoplay loop muted playsinline></video>
-      <h1 class="grad-text">FLAGSHIP</h1>
-      <p>Neutral Calendar — minimalist Flutter productivity app: calendar tasks, daily focus &amp; analytics.</p>
-      <a class="card-btn" href="https://github.com/TranNguyen108/neutral-calendar-app" target="_blank" rel="noopener">VIEW CODE</a>
+      <h1 class="grad-text">BERTHING AID</h1>
+      <p>Berthing Aid System — real-time support for docking ships: live data, dashboards and alerts that help crews berth safely.</p>
+      <span class="card-btn">CLIENT WORK</span>
     </div>
     <div class="card auto-display">
       <video src="videos/hero2.mp4" autoplay loop muted playsinline></video>
+      <h1 class="grad-text">CHỢ MỐI</h1>
+      <p>Wholesale marketplace platform built with Next.js — hundreds of real trading connections, admin features and media handling.</p>
+      <span class="card-btn">CLIENT WORK</span>
+    </div>
+    <div class="card auto-display">
+      <video src="videos/hero3.mp4" autoplay loop muted playsinline></video>
+      <h1 class="grad-text">AZC MART</h1>
+      <p>E-commerce platform with custom admin tooling, built and improved together with the client's team.</p>
+      <span class="card-btn">CLIENT WORK</span>
+    </div>
+    <div class="card auto-display">
+      <video src="videos/hero1.mp4" autoplay loop muted playsinline></video>
       <h1 class="grad-text">FLOWER SHOP</h1>
       <p>Full e-commerce flower store in PHP &amp; MySQL — cart, vouchers, payments, admin panel.</p>
       <a class="card-btn" href="https://github.com/TranNguyen108/flower-shop" target="_blank" rel="noopener">VIEW CODE</a>
     </div>
     <div class="card auto-display">
-      <video src="videos/hero3.mp4" autoplay loop muted playsinline></video>
+      <video src="videos/hero2.mp4" autoplay loop muted playsinline></video>
       <h1 class="grad-text">NHACO HOA</h1>
       <p>Modern business website built with Next.js, TypeScript and Tailwind CSS.</p>
       <a class="card-btn" href="https://github.com/TranNguyen108/nhacohoa" target="_blank" rel="noopener">VIEW CODE</a>
-    </div>
-    <div class="card auto-display">
-      <video src="videos/hero1.mp4" autoplay loop muted playsinline></video>
-      <h1 class="grad-text">AI CHATBOT</h1>
-      <p>AI-powered chatbot with a Python backend and a clean web frontend.</p>
-      <a class="card-btn" href="https://github.com/TranNguyen108/ai-chat-bot" target="_blank" rel="noopener">VIEW CODE</a>
-    </div>
-    <div class="card auto-display">
-      <video src="videos/hero2.mp4" autoplay loop muted playsinline></video>
-      <h1 class="grad-text">ATC TOOL</h1>
-      <p>Python desktop automation tool with a full graphical interface.</p>
-      <a class="card-btn" href="https://github.com/TranNguyen108/ATC_Tool-" target="_blank" rel="noopener">VIEW CODE</a>
     </div>
     <div class="card auto-display more-card">
       <h1 class="grad-text">MORE ON GITHUB</h1>
@@ -116,14 +117,14 @@
     <div class="j-item auto-display"><span>2022</span><h3>FIRST LINES OF CODE</h3><p>HTML, CSS and pure curiosity — where it all started.</p></div>
     <div class="j-item auto-display"><span>2024</span><h3>WEB PROJECTS</h3><p>Florist websites and coursework — learning to ship.</p></div>
     <div class="j-item auto-display"><span>2025</span><h3>GOING FULL-STACK</h3><p>E-commerce in PHP, Next.js apps, an AI chatbot in Python.</p></div>
-    <div class="j-item auto-display"><span>2026</span><h3>MOBILE &amp; BEYOND</h3><p>Flutter apps, automation tooling, deeper computer science.</p></div>
+    <div class="j-item auto-display"><span>2026</span><h3>REAL CLIENT WORK</h3><p>Berthing aid systems, a wholesale marketplace and e-commerce — shipping for real clients.</p></div>
   </div>
 </section>
 
 <!-- ============ CONTACT ============ -->
 <section id="contact" class="contact-section">
   <img class="clip-img clip-1" src="img/abs1.png" alt="">
-  <img class="clip-img clip-2" src="img/avatar.jpg" alt="">
+  <img class="clip-img clip-2" src="img/portrait.jpg" alt="Trần Đỗ Huy Nguyên">
   <img class="clip-img clip-3" src="img/abs2.png" alt="">
   <p>JOIN MY JOURNEY</p>
   <div class="auto-blur">
@@ -134,9 +135,11 @@
 
 <!-- ============ FOOTER ============ -->
 <section class="footer">
-  <p>© 2026 N.C — ALL RIGHTS RESERVED</p>
+  <p>© 2026 TRẦN ĐỖ HUY NGUYÊN — ALL RIGHTS RESERVED</p>
   <ul>
     <li><a href="https://github.com/TranNguyen108" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a></li>
+    <li><a href="https://www.facebook.com/trannguyenn108/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bx bxl-facebook"></i></a></li>
+    <li><a href="https://www.instagram.com/trannguyenn108" target="_blank" rel="noopener" aria-label="Instagram"><i class="bx bxl-instagram"></i></a></li>
   </ul>
   <p>PRIVACY POLICY</p>
 </section>
