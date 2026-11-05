@@ -24,3 +24,21 @@ if (!CSS.supports('animation-timeline: view()')) {
     io.observe(el);
   });
 }
+
+// Light/dark theme toggle — dark is the original design; choice is remembered
+const themeToggle = document.getElementById('theme-toggle');
+function applyTheme(t) {
+  if (t === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    themeToggle.innerHTML = '<i class="bx bx-sun"></i>';
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+    themeToggle.innerHTML = '<i class="bx bx-moon"></i>';
+  }
+}
+applyTheme(localStorage.getItem('theme') || 'dark');
+themeToggle.addEventListener('click', () => {
+  const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  localStorage.setItem('theme', next);
+  applyTheme(next);
+});
