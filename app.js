@@ -42,3 +42,13 @@ themeToggle.addEventListener('click', () => {
   localStorage.setItem('theme', next);
   applyTheme(next);
 });
+
+// Play videos only while they are on screen — decoding 6 videos at once
+// is what made scrolling stutter. Off-screen videos are paused.
+const videoIO = new IntersectionObserver((entries) => {
+  entries.forEach((e) => {
+    if (e.isIntersecting) { e.target.play().catch(() => {}); }
+    else { e.target.pause(); }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('video').forEach((v) => videoIO.observe(v));
