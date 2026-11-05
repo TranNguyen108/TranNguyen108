@@ -50,9 +50,9 @@ header{
 .hero-info{position:absolute;z-index:1;top:80px;left:50px;max-width:640px}
 .hero-info h1{
   font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-weight:900;
-  font-size:clamp(60px,11vw,120px);line-height:.95;letter-spacing:2px;color:#fff;
+  font-size:clamp(46px,8.2vw,104px);line-height:.98;letter-spacing:2px;color:#fff;
 }
-.hero-info p{max-width:210px;margin:22px 0;font-size:15px;line-height:24px;color:#cfcfcf}
+.hero-info p{max-width:340px;margin:22px 0;font-size:15px;line-height:24px;color:#cfcfcf}
 .hero-info button{
   background:#d4f822;color:#0a0a0a;border:2px solid #d4f822;
   padding:10px 40px;border-radius:20px;font-weight:800;letter-spacing:1px;cursor:pointer;transition:.3s;font-size:14px;
@@ -161,6 +161,9 @@ header{
   font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
 }
 .contact-btn:hover{background:transparent;color:#d4f822;box-shadow:0 0 18px rgba(212,248,34,.35)}
+.contact-actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;z-index:1}
+.contact-btn.ghost{background:transparent;color:#d4f822}
+.contact-btn.ghost:hover{background:#d4f822;color:#0a0a0a}
 .clip-img{position:absolute;object-fit:cover;z-index:0;opacity:.9;filter:saturate(1.1)}
 .clip-1{top:10%;right:20%;height:400px;clip-path:polygon(50% 0%,100% 38%,82% 100%,18% 100%,0% 38%)}
 .clip-2{left:50px;top:10px;height:200px;width:200px;clip-path:circle(50% at 50% 50%)}
@@ -219,7 +222,9 @@ header{
   .about-section h1{font-size:50px}
   .image-box{width:300px}
   .contact-section h1{font-size:44px;max-width:300px}
+  .footer{padding:16px 14px}
   .footer p{font-size:10px}
+  .footer p:last-child{display:none}
   .footer ul{margin-left:40px}
   .info-section{width:92%}
   .journey-grid{width:92%}
@@ -250,6 +255,8 @@ header{
 [data-theme="light"] .j-item span{color:#65a30d}
 [data-theme="light"] .j-item:hover{border-color:#0891b2}
 [data-theme="light"] .contact-section>p{color:#666}
+[data-theme="light"] .contact-btn.ghost{color:#65a30d;border-color:#65a30d}
+[data-theme="light"] .contact-btn.ghost:hover{background:#65a30d;color:#fff}
 [data-theme="light"] .footer{background:rgba(255,255,255,.75);border-top:1px solid rgba(0,0,0,.08)}
 [data-theme="light"] .footer p{color:#666}
 [data-theme="light"] .footer ul li a{color:#141414;border-color:#65a30d}
